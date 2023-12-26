@@ -1,0 +1,17 @@
+[project]
+name = "myuuid_cffi"
+version = "1"
+description = ""
+authors = [
+    {name = "betaboon", email = "betaboon@0x80.ninja"},
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.pdm.build]
+run-setuptools = true
+
+[build-system]
+requires = ["pdm-backend", "setuptools", "cffi"]
+build-backend = "pdm.backend"
